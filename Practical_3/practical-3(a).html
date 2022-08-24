@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical-3(a)</title>
+    <style>
+        h1{
+            color:black;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="header1">ECMAscript 6</h1>
+    <h1 id="header2">Javascript</h1>
+    <button id="btn" onclick="changecolor()">Start</button>
+</body>
+<script>
+    function changecolor(){
+        var a=document.getElementById("header1")
+        var b=document.getElementById("header2")
+
+        setInterval(altercolor1,1000)
+        setInterval(altercolor2,2000)
+
+        function altercolor1(){
+            a.style.color="Red"
+            b.style.color="Green"
+        }
+        function altercolor2(){
+            a.style.color="black"
+            b.style.color="black"
+        }
+        
+    }
+
+</script>
+</html>

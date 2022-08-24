@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>20CS018 - Practical_3b</title>
+</head>
+
+<body style="background-color: rgb(15, 199, 92);">
+    <center>
+        <h1 style="margin-top: 25px; margin-bottom: 50px;">Practical_3b</h1>
+        <p style="font-size: 22px;">Right click and select Inspect and then go to Console to view Output !!</p>
+    </center>
+
+    <script>
+        class Student {
+            constructor(rollno, first_name, last_name) {
+                this.rollno = rollno;
+                this.first_name = first_name;
+                this.last_name = last_name;
+            }
+
+            set setLastName(l_name) {
+                this.last_name = l_name;
+            }
+            
+            set setFirstName(f_name) {
+                this.first_name = f_name;
+            }
+
+            get getFirstName() {
+                return this.first_name;
+            }
+
+            get getLastName() {
+                return this.last_name;
+            }
+        }
+
+        var s1 = new Student('20CS018', 'Dev', 'Halvawala')
+        console.log(s1.getFirstName + " " + s1.getLastName);
+        
+        s1.setFirstName = 'Harsh';
+        s1.setLastName = 'Kumar';
+        console.log(s1.getFirstName + " " + s1.getLastName);
+    </script>
+</body>
+</html>
